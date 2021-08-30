@@ -1,0 +1,153 @@
+:root {
+  /* primary colors */
+  --primary-blue-light:#e0e8ff;
+  --primary-blue-dark:#3829e0;
+
+  /* neutral colors */
+  --neutral-blue-light : #f5f7ff;
+  --neutral-blue-dark : #7280a7;
+  --neutral-blue-darkest : #1f2f56;
+
+  /* typography */
+  --default-font: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  background: 
+  url("/images/pattern-background-desktop.svg"), 
+  var(--primary-blue-light);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.card__banner-image {
+  width: 400px;
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .card__banner-image {
+    width: 320px;
+  }
+}
+
+.card__content {
+  padding: 0 2rem;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  .card__content {
+    padding: 0 1.6rem;
+  }
+}
+
+.card__content-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card__content-header > h1 {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--neutral-blue-darkest);
+  margin-bottom: .875rem;
+}
+.card__content-header > p {
+  font-size: var(--default-font);
+  font-weight: 300;
+  color: var(--neutral-blue-dark);
+  margin-bottom: .875rem;
+}
+
+.card__content-pricing {
+  display: flex;
+  align-items: center;
+  background-color: #F8F9FE;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.card__content-pricing-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__content-pricing > img {
+  margin-right: 1rem;
+}
+
+.card__content-pricing-item > p {
+  color: var(--neutral-blue-darkest);
+  font-weight: 700;
+}
+
+.card__content-pricing-item > span {
+  color: var(--neutral-blue-dark);
+  font-weight: 500;
+}
+
+.card__content-button > button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background: none;
+  width: 100%;
+  margin-top: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.card__content-button .card__content-button-primary {
+  background-color: var(--primary-blue-dark);
+  color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px 24px 29px -13px rgba(56, 41, 224, 0.34);
+  -webkit-box-shadow: 1px 24px 29px -13px rgba(56,41,224,0.34);
+  -moz-box-shadow: 1px 24px 29px -13px rgba(56,41,224,0.34);
+}
+
+.card__content-button .card__content-button-secondary {
+  color: var(--neutral-blue-dark);
+}
+
+.attribution {
+  width: 100%;
+  margin: 2rem 0;
+  text-align: center;
+}
