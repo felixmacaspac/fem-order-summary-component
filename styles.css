@@ -22,7 +22,7 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   min-height: 100vh;
   background: 
-  url("/images/pattern-background-desktop.svg"), 
+  url("images/pattern-background-desktop.svg"), 
   var(--primary-blue-light);
   background-repeat: no-repeat;
   background-size: contain;
